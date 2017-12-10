@@ -1,0 +1,55 @@
+/* Header styles */
+.brand-title {
+    background: #356084;
+}
+
+#mainnav-container {
+    z-index: 100;
+    transition: all 0.4s ease-in-out;
+    &.active {
+        left: 0;
+    }
+}
+
+.mainnav--item {
+    >a {
+        color: #ccc;
+        padding: 12px 18px;
+        display: block;
+        &:focus {
+            color: #ccc !important;
+        }
+        &.active {
+            color: #fff;
+            font-weight: 600;
+            box-shadow: inset 2px 0 0 0 #356084;
+        }
+        &:hover {
+            color: #fff;
+        }
+    }
+    i {
+        padding: 0 10px 0 0;
+        vertical-align: middle;
+        font-size: 1.15em;
+    }
+    .menu-title {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    &.active {
+        background-color: #202a2f;
+    }
+}
+
+.mainnav-submenu {
+    display: none;
+    a {
+        padding: 10px 20px 12px 53px;
+        display: block;
+        font-size: 13px;
+        &.active {
+            color: #fff;
+        }
+    }
+}

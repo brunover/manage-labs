@@ -1,0 +1,45 @@
+// Buttons color pattern
+.btn-mint-basic, .btn-mint, .btn-mint:focus, .btn-mint.disabled:hover, .btn-mint:disabled:hover, .btn-hover-mint:hover, .btn-hover-mint:active, .btn-hover-mint.active, .btn.btn-active-mint:active, .btn.btn-active-mint.active, .dropdown.open>.btn.btn-active-mint, .btn-group.open .dropdown-toggle.btn.btn-active-mint {
+    background-color: $blue;
+    border-color: $blue;
+    &:hover {
+        background-color: #306998;
+        border-color: #306998;
+    }
+}
+
+.form--personalized {
+    label {
+        font-size: 14px;
+        color: $blue;
+    }
+    .form-control {
+        padding: 0 12px;
+        height: 37px;
+        font-size: 15px;
+    }
+    textarea.form-control {
+        height: auto;
+        resize: none;
+        padding: 12px;
+    }
+    .select2-container {
+        outline: none !important;
+        .select2-selection--single {
+            height: 37px;
+            outline: none !important;
+            .select2-selection__rendered {
+                padding-left: 14px;
+                padding-right: 26px;
+                line-height: 37px;
+                outline: none !important;
+            }
+        }
+    }
+    .input-group-addon {
+        background: $white;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        height: 37px;
+    }
+}

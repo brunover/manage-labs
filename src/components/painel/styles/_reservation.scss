@@ -1,0 +1,73 @@
+// add
+.calendar-labs {
+    .fc-row.fc-widget-header table th {
+        height: 30px;
+        background: $blue;
+        color: $white;
+        vertical-align: middle;
+    }
+    .fc-event {
+        font-size: 13px;
+    }
+    .fc-day {
+        cursor: pointer;
+    }
+    .fc-center {
+        h2 {
+            text-transform: capitalize;
+            color: $blue;
+        }
+    }
+}
+
+
+.reservation-calendar {
+    background: $white;
+    .datepicker-inline,
+    .datepicker table {
+        width: 100%;
+    }
+    .datepicker {
+        padding: 0;
+    }
+    td,th {
+        height: 37px;
+        border-radius: 0 !important;
+    }
+    th {
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    td {
+        font-size: 15px;
+        &.today {
+            color: $white !important;
+            background: #666 !important;
+        }
+        &.day.active {
+            color: $white !important;
+            background: $blue !important;
+        }
+    }
+    thead {
+        th {
+            height: 45px;
+        }
+        tr:last-child {
+            th {
+                color: $white;
+                background: $blue;
+            }
+        }
+    }
+    .datepicker-switch {
+        font-size: 16px;
+        color: $blue;
+    }
+    .prev,.next,td,th {
+        @include transition();
+    }
+    th.today {
+        height: 45px;
+    }
+}

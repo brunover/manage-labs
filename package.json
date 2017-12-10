@@ -1,0 +1,38 @@
+{
+  "name": "manage-labs",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap-datepicker": "^1.7.1",
+    "form-serialize": "^0.7.2",
+    "fullcalendar": "^3.7.0",
+    "jquery": "^2.2.4",
+    "jquery-mask-plugin": "^1.14.12",
+    "nestable": "^0.2.0",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-drag-and-drop": "^2.4.0",
+    "react-dropzone": "^4.2.3",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "react-transition-group": "^2.2.1",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "select2": "^4.0.6-rc.1"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/**/* -o src/**/*",
+    "watch-css-site": "npm run build-css && node-sass-chokidar src/components/site/styles -o src/components/site/styles --watch --recursive",
+    "watch-css": "npm run build-css && node-sass-chokidar src/components/painel/styles -o src/components/painel/styles --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

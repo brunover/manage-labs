@@ -1,0 +1,122 @@
+// Variables
+$blue: #356084;
+
+// Forms
+.form-group--select {
+    position: relative;
+    &:before {
+        @extend .before-after;
+        width: 0;
+        height: 0;
+        top: 50%;
+        right: 20px;
+        @include translate(0,-50%);
+        border-style: solid;
+        border-width: 7px 6px 0 6px;
+        border-color: $blue transparent transparent transparent;
+    }
+}
+
+// Pages
+.login-page,
+.contact-page,
+.register-page,
+.forgetpass-page,
+.resetpass-page {
+    .cls-content,
+    .panel-body {
+        padding-top: 0;
+    }
+    .h3,
+    .h2 {
+        margin-top: 0;
+        font-weight: 300;
+    }
+    input.form-control {
+        height: 45px;
+        font-size: 15px;
+        &:focus {
+            border-color: $blue;
+        }
+    }
+    textarea {
+        resize: none;
+        font-size: 15px;
+    }
+    select {
+        border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        -webkit-appearance: none;
+        width: 100%;
+        display: block;
+        height: 45px;
+        font-size: 15px;
+        background: #fff;
+        border: 1px solid #e9e9e9;
+        padding: 0 12px;
+    }
+    .btn {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-right: 15px;
+    }
+    input[type="checkbox"] {
+        margin-left: 0 !important;
+    }
+}
+
+// Login
+.login-welcome-col {
+    padding-right: 50px;
+    h2 {
+        font-weight: 300;
+        margin: 0 0 20px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+    .btn {
+        margin-top: 20px;
+        background: $blue;
+        border-color: $blue;
+    }
+}
+
+// Register
+.register-page {
+    .panel {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+    }
+}
+
+// Forget pass
+.forgetpass-page {
+    .panel {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+    }
+}
+
+// Contact
+.contact-page {
+    .fa {
+        font-size: 24px;
+    }
+    .fa-facebook-official,
+    .fa-facebook {
+        color: #30608a;
+    }
+    .h4 {
+        line-height: 1.34em;
+    }
+}

@@ -1,0 +1,48 @@
+@media screen and (min-width: 901px) {
+
+    .container-absolute {
+        top: 50%;
+        left: 50%;
+        z-index: 400;
+        width: 100%;
+        position: absolute;
+        @include translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html,body {
+        height: 100%;
+        min-height: 100%;
+    }
+
+    .container-absolute {
+        padding: 60px 25px;
+        z-index: 400;
+        position: relative;
+    }
+
+    .site-page #footer,
+    .site-page {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .site-page {
+        .panel-body {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .cls-content {
+            padding: 20px 0 0;
+            .cls-content-sm,
+            .cls-content-lg {
+                width: 100%;
+            }
+        }
+    }
+    .container-absolute {
+        padding: 20px;
+    }
+}

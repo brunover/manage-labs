@@ -1,0 +1,43 @@
+/* Header styles */
+.brand-title {
+  background: #356084; }
+
+#mainnav-container {
+  z-index: 100;
+  transition: all 0.4s ease-in-out; }
+  #mainnav-container.active {
+    left: 0; }
+
+.mainnav--item > a {
+  color: #ccc;
+  padding: 12px 18px;
+  display: block; }
+  .mainnav--item > a:focus {
+    color: #ccc !important; }
+  .mainnav--item > a.active {
+    color: #fff;
+    font-weight: 600;
+    box-shadow: inset 2px 0 0 0 #356084; }
+  .mainnav--item > a:hover {
+    color: #fff; }
+
+.mainnav--item i {
+  padding: 0 10px 0 0;
+  vertical-align: middle;
+  font-size: 1.15em; }
+
+.mainnav--item .menu-title {
+  font-size: 12px;
+  text-transform: uppercase; }
+
+.mainnav--item.active {
+  background-color: #202a2f; }
+
+.mainnav-submenu {
+  display: none; }
+  .mainnav-submenu a {
+    padding: 10px 20px 12px 53px;
+    display: block;
+    font-size: 13px; }
+    .mainnav-submenu a.active {
+      color: #fff; }

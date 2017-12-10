@@ -1,0 +1,44 @@
+.site-header {
+    background: #224563;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 0;
+    position: relative;
+    z-index: 2000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.site-logo {
+    margin: 0;
+    // top: 50%;
+    // left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+    // position: absolute;
+    color: #fff;
+    // @include translate(0, -50%);
+    a {
+        color: #fff;
+    }
+}
+
+.site-nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-nav a {
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+
+.site-nav a.active {
+    font-weight: 700;
+    color: #fff !important;
+}

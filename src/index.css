@@ -1,0 +1,25 @@
+.page {
+  padding: 0 20px;
+}
+
+/* Page animations */
+.fade-enter .view-internal,
+.fade-enter.fade-enter-active .view-internal   {
+  transition: opacity 400ms ease-in-out;
+}
+
+.fade-enter,
+.fade-enter .view-internal  {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active,
+.fade-enter.fade-enter-active .view-internal {
+  opacity: 1;
+}
+
+.fade-exit,
+.fade-exit .view-internal {
+  opacity: 0;
+}
